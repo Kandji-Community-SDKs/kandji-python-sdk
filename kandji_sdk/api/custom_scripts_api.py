@@ -840,7 +840,7 @@ class CustomScriptsApi:
     @validate_call
     def list_custom_scripts(
         self,
-        page: Annotated[Optional[StrictStr], Field(description="Optional page number (when results exceed pagination threshold)")] = None,
+        page: Annotated[Optional[StrictStr], Field(description="Optional page number. Used when results exceed pagination threshold. A hard upper limit is set at 300 device records returned per request.")] = None,
         _request_timeout: Union[
             None,
             Annotated[StrictFloat, Field(gt=0)],
@@ -858,7 +858,7 @@ class CustomScriptsApi:
 
         This endpoint makes a request to retrieve a list of custom scripts from the Kandji library.
 
-        :param page: Optional page number (when results exceed pagination threshold)
+        :param page: Optional page number. Used when results exceed pagination threshold. A hard upper limit is set at 300 device records returned per request.
         :type page: str
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
@@ -907,7 +907,7 @@ class CustomScriptsApi:
     @validate_call
     def list_custom_scripts_with_http_info(
         self,
-        page: Annotated[Optional[StrictStr], Field(description="Optional page number (when results exceed pagination threshold)")] = None,
+        page: Annotated[Optional[StrictStr], Field(description="Optional page number. Used when results exceed pagination threshold. A hard upper limit is set at 300 device records returned per request.")] = None,
         _request_timeout: Union[
             None,
             Annotated[StrictFloat, Field(gt=0)],
@@ -925,7 +925,7 @@ class CustomScriptsApi:
 
         This endpoint makes a request to retrieve a list of custom scripts from the Kandji library.
 
-        :param page: Optional page number (when results exceed pagination threshold)
+        :param page: Optional page number. Used when results exceed pagination threshold. A hard upper limit is set at 300 device records returned per request.
         :type page: str
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
@@ -974,7 +974,7 @@ class CustomScriptsApi:
     @validate_call
     def list_custom_scripts_without_preload_content(
         self,
-        page: Annotated[Optional[StrictStr], Field(description="Optional page number (when results exceed pagination threshold)")] = None,
+        page: Annotated[Optional[StrictStr], Field(description="Optional page number. Used when results exceed pagination threshold. A hard upper limit is set at 300 device records returned per request.")] = None,
         _request_timeout: Union[
             None,
             Annotated[StrictFloat, Field(gt=0)],
@@ -992,7 +992,7 @@ class CustomScriptsApi:
 
         This endpoint makes a request to retrieve a list of custom scripts from the Kandji library.
 
-        :param page: Optional page number (when results exceed pagination threshold)
+        :param page: Optional page number. Used when results exceed pagination threshold. A hard upper limit is set at 300 device records returned per request.
         :type page: str
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request

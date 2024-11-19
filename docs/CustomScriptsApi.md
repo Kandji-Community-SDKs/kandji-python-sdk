@@ -277,7 +277,7 @@ configuration = kandji_sdk.Configuration(
 with kandji_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = kandji_sdk.CustomScriptsApi(api_client)
-    page = '1' # str | Optional page number (when results exceed pagination threshold) (optional)
+    page = '1' # str | Optional page number. Used when results exceed pagination threshold. A hard upper limit is set at 300 device records returned per request. (optional)
 
     try:
         # List Custom Scripts
@@ -295,7 +295,7 @@ with kandji_sdk.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **str**| Optional page number (when results exceed pagination threshold) | [optional] 
+ **page** | **str**| Optional page number. Used when results exceed pagination threshold. A hard upper limit is set at 300 device records returned per request. | [optional] 
 
 ### Return type
 

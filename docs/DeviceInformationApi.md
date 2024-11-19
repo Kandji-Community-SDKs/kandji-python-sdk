@@ -674,7 +674,7 @@ with kandji_sdk.ApiClient(configuration) as api_client:
     asset_tag = '23245' # str |  (optional)
     blueprint_id = '91f97957-2353-4f86-a1ab-64d2b044a596' # str | Return results &quot;containing&quot; the specified blueprint id (optional)
     device_id = '2cfeb3ac-3b5d-423e-bcff-e2676a3a32da' # str |  (optional)
-    device_name = 'Johnny's MacBook Pro' # str |  (optional)
+    device_name = 'Johnny\'s MacBook Pro' # str |  (optional)
     filevault_enabled = 'true' # str | <p>Query for devices that either have FileVault on (true) or off (false). This parameter only applies to macOS. </p> <p>An empty list <code>[]</code> will be returned if no devices are found with the given parameter value.</p> (optional)
     mac_address = '00:0c:29:05:43:b6' # str | Search for a specific device by MAC address (optional)
     model = 'MacBook Air (M1, 2020)' # str | Return model results &quot;containing&quot; the specified model string. (optional)

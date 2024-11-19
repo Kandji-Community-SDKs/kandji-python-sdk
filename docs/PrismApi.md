@@ -572,7 +572,7 @@ with kandji_sdk.ApiClient(configuration) as api_client:
     api_instance = kandji_sdk.PrismApi(api_client)
     blueprint_ids = '14afabf2-7599-47af-a942-bf7f0b8fedf8' # str | Filter results by one or more blueprint IDs separated by commas. (optional)
     device_families = 'Mac,iPhone,iPad,tvOS' # str | Filter results by one or more device families separate by commas. (optional)
-    filter = '{\"device__name\":{\"in\":[\"testusers's MacBook Air\"]},\"updated_at\":{\"gte\":\"2023-09-03T04:00:00.000Z\",\"lte\":\"2023-09-04T04:00:00.000Z\"}}' # str | <p>JSON schema object containing one or more key value pairs.</p> <p>Note: For detailed information on fiters, see the Filters section at the begining of the Visibility API endpoints in this doc.</p> (optional)
+    filter = '{\"device__name\":{\"in\":[\"testusers\'s MacBook Air\"]},\"updated_at\":{\"gte\":\"2023-09-03T04:00:00.000Z\",\"lte\":\"2023-09-04T04:00:00.000Z\"}}' # str | <p>JSON schema object containing one or more key value pairs.</p> <p>Note: For detailed information on fiters, see the Filters section at the begining of the Visibility API endpoints in this doc.</p> (optional)
     sort_by = 'serial_number' # str | Sort results by the name of a given response body key in either ascending (default behavior) or descending(<code>-</code>) order. (optional)
     limit = '' # str | A hard upper <code>limit</code> is set at 300 device records returned per request. If more device records are expected, pagination should be used using the <code>limit</code> and <code>offset</code> parameters. Additionally, parameter queries can be added to a request to limit the results. (optional)
     offset = '' # str | Specify the starting record to return (optional)
