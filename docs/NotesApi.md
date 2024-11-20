@@ -326,7 +326,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_device_note**
-> object update_device_note(device_id, note_id, authorization, content_type, body=body)
+> object update_device_note(device_id, note_id, body=body)
 
 Update Device Note
 
@@ -363,13 +363,11 @@ with kandji_sdk.ApiClient(configuration) as api_client:
     api_instance = kandji_sdk.NotesApi(api_client)
     device_id = 'device_id_example' # str | 
     note_id = 'note_id_example' # str | 
-    authorization = 'Bearer {{API TOKEN}}' # str | 
-    content_type = 'application/json' # str | 
     body = 'body_example' # str |  (optional)
 
     try:
         # Update Device Note
-        api_response = api_instance.update_device_note(device_id, note_id, authorization, content_type, body=body)
+        api_response = api_instance.update_device_note(device_id, note_id, body=body)
         print("The response of NotesApi->update_device_note:\n")
         pprint(api_response)
     except Exception as e:
@@ -385,8 +383,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **device_id** | **str**|  | 
  **note_id** | **str**|  | 
- **authorization** | **str**|  | 
- **content_type** | **str**|  | 
  **body** | **str**|  | [optional] 
 
 ### Return type

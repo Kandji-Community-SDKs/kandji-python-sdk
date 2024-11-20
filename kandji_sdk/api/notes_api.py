@@ -1144,8 +1144,6 @@ class NotesApi:
         self,
         device_id: StrictStr,
         note_id: StrictStr,
-        authorization: StrictStr,
-        content_type: StrictStr,
         body: Optional[StrictStr] = None,
         _request_timeout: Union[
             None,
@@ -1168,10 +1166,6 @@ class NotesApi:
         :type device_id: str
         :param note_id: (required)
         :type note_id: str
-        :param authorization:  (required)
-        :type authorization: str
-        :param content_type:  (required)
-        :type content_type: str
         :param body:
         :type body: str
         :param _request_timeout: timeout setting for this request. If one
@@ -1199,8 +1193,6 @@ class NotesApi:
         _param = self._update_device_note_serialize(
             device_id=device_id,
             note_id=note_id,
-            authorization=authorization,
-            content_type=content_type,
             body=body,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -1227,8 +1219,6 @@ class NotesApi:
         self,
         device_id: StrictStr,
         note_id: StrictStr,
-        authorization: StrictStr,
-        content_type: StrictStr,
         body: Optional[StrictStr] = None,
         _request_timeout: Union[
             None,
@@ -1251,10 +1241,6 @@ class NotesApi:
         :type device_id: str
         :param note_id: (required)
         :type note_id: str
-        :param authorization:  (required)
-        :type authorization: str
-        :param content_type:  (required)
-        :type content_type: str
         :param body:
         :type body: str
         :param _request_timeout: timeout setting for this request. If one
@@ -1282,8 +1268,6 @@ class NotesApi:
         _param = self._update_device_note_serialize(
             device_id=device_id,
             note_id=note_id,
-            authorization=authorization,
-            content_type=content_type,
             body=body,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -1310,8 +1294,6 @@ class NotesApi:
         self,
         device_id: StrictStr,
         note_id: StrictStr,
-        authorization: StrictStr,
-        content_type: StrictStr,
         body: Optional[StrictStr] = None,
         _request_timeout: Union[
             None,
@@ -1334,10 +1316,6 @@ class NotesApi:
         :type device_id: str
         :param note_id: (required)
         :type note_id: str
-        :param authorization:  (required)
-        :type authorization: str
-        :param content_type:  (required)
-        :type content_type: str
         :param body:
         :type body: str
         :param _request_timeout: timeout setting for this request. If one
@@ -1365,8 +1343,6 @@ class NotesApi:
         _param = self._update_device_note_serialize(
             device_id=device_id,
             note_id=note_id,
-            authorization=authorization,
-            content_type=content_type,
             body=body,
             _request_auth=_request_auth,
             _content_type=_content_type,
@@ -1388,8 +1364,6 @@ class NotesApi:
         self,
         device_id,
         note_id,
-        authorization,
-        content_type,
         body,
         _request_auth,
         _content_type,
@@ -1418,10 +1392,6 @@ class NotesApi:
             _path_params['note_id'] = note_id
         # process the query parameters
         # process the header parameters
-        if authorization is not None:
-            _header_params['Authorization'] = authorization
-        if content_type is not None:
-            _header_params['Content-Type'] = content_type
         # process the form parameters
         # process the body parameter
         if body is not None:
